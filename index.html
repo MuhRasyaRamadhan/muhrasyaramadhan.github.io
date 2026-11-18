@@ -218,6 +218,18 @@ section{position:relative;padding:clamp(80px,11vw,150px) var(--pad)}
 .ach-visual .s1 .ph{aspect-ratio:1.414/1}
 .ach-visual .s2 .ph{aspect-ratio:1/1.414;background:#fff}
 .ach-visual .shot:hover{transform:rotate(0) translateY(-6px);z-index:3}
+.ach2{position:relative;margin-top:70px;display:grid;grid-template-columns:auto 1fr minmax(0,340px);gap:clamp(20px,3vw,40px);align-items:center;padding:clamp(22px,3vw,34px);border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,#17171c,#111114)}
+.ach2 .score{display:grid;place-items:center;text-align:center;width:150px;height:150px;border-radius:50%;border:3px solid var(--accent);box-shadow:0 0 0 8px rgba(255,180,0,.08)}
+.ach2 .score b{display:block;font-family:var(--display);font-weight:400;font-size:40px;line-height:1;color:var(--accent)}
+.ach2 .score small{display:block;margin-top:6px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.ach2 .kind{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#111;background:var(--accent);padding:6px 12px;border-radius:999px}
+.ach2 h3{font-family:var(--display);font-weight:400;font-size:clamp(24px,2.8vw,38px);line-height:1.05;text-transform:uppercase;margin:14px 0 10px}
+.ach2 p{color:#c4c4cc;font-size:15px;max-width:620px}
+.ach2 .meta{margin-top:14px}
+.ach2 .btn{margin-top:18px}
+.ach2 .shot .ph{aspect-ratio:1.29/1;background:#fff}
+.ach2 .shot figcaption,.ach2 .zoom-hint{display:none}
+@media (max-width:900px){.ach2{grid-template-columns:1fr;justify-items:start}.ach2 .score{width:120px;height:120px}.ach2 .score b{font-size:32px}.ach2-media{width:100%}}
 .org{margin-top:80px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:26px 30px;border:1px solid var(--line);border-radius:20px;background:#141418}
 .org b{font-family:var(--display);font-size:24px;letter-spacing:.03em;text-transform:uppercase}
 .org p{color:#b5b5bd;font-size:14.5px}
@@ -308,7 +320,7 @@ footer{margin-top:90px;padding-top:26px;border-top:1px solid var(--line);display
       <div class="about-role">Energy Generation Engineering Technology · Universitas Negeri Malang</div>
       <p>I am a third-semester <strong>Applied Bachelor's (D4) student in Energy Generation Engineering Technology</strong> at Universitas Negeri Malang, seeking an <strong>Electrical Engineering internship</strong>. I am especially interested in electrical systems and renewable energy.</p>
       <p>As part of a programming division, I built a <strong>real-time IoT web dashboard</strong> (Python + ESP32) for a wave energy trainer. I have also assembled and tested a <strong>24 V DC power supply</strong>, drafted <strong>DC machine installation diagrams</strong> in AutoCAD, and designed a water turbine in Autodesk Inventor. I also run CFD simulations in ANSYS and machine simulations in MATLAB/Simulink.</p>
-      <p>My team's journal article on electricity generation from agricultural residues won <strong>2nd place (Silver Award) at the international level in KI-RBSET 2026, Malaysia</strong>. I am used to working in project teams and committees, and I learn new tools fast.</p>
+      <p>My team's journal article on electricity generation from agricultural residues won <strong>2nd place (Silver Award) at the international level in KI-RBSET 2026, Malaysia</strong>. I also completed Saylor University's <strong>PHYS102: Introduction to Electromagnetism</strong> course with a <strong>96.08% grade</strong>. I am used to working in project teams and committees, and I learn new tools fast.</p>
       <div class="contact-row">
         <a class="chip-link" href="mailto:rasyaacca64@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>rasyaacca64@gmail.com</a>
         <a class="chip-link" href="https://www.linkedin.com/in/muhrasya-ramadhan" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>Muh Rasya Ramadhan</a>
@@ -470,7 +482,7 @@ footer{margin-top:90px;padding-top:26px;border-top:1px solid var(--line);display
 <section id="achievement">
   <div class="ach-bg"></div>
   <div class="wrap" style="position:relative">
-    <div class="eyebrow reveal">Achievement &amp; publication</div>
+    <div class="eyebrow reveal">Achievements &amp; publication</div>
     <h2 class="title gold reveal">Academic Achievement</h2>
     <div class="ach">
       <div class="reveal">
@@ -485,6 +497,21 @@ footer{margin-top:90px;padding-top:26px;border-top:1px solid var(--line);display
         <a class="btn" href="https://karyailham.com.my/index.php/kijbb/index" target="_blank" rel="noopener">View journal ↗</a>
       </div>
       <div class="ach-visual reveal" data-group="ach"></div>
+    </div>
+    <div class="ach2 reveal">
+      <div class="score"><div><b>96.08%</b><small>Final grade</small></div></div>
+      <div>
+        <span class="kind">Course completion · High grade</span>
+        <h3>PHYS102: Introduction to Electromagnetism</h3>
+        <p>Certificate of achievement for completing Saylor University's 42-hour introductory electromagnetism course with a final grade of 96.08%.</p>
+        <dl class="meta">
+          <dt>Issuer</dt><dd>Saylor University (saylor.org)</dd>
+          <dt>Issued</dt><dd>25 March 2026 · Certificate ID 9117070268RR</dd>
+          <dt>Workload</dt><dd>42 hours · 4.2 Continuing Education Units</dd>
+        </dl>
+        <a class="btn" href="https://learn.saylor.org/admin/tool/certificate/index.php?code=9117070268RR" target="_blank" rel="noopener">Verify certificate ↗</a>
+      </div>
+      <div class="ach2-media" data-group="ach2"></div>
     </div>
     <div class="org reveal">
       <div><b>HMP TRPE · Universitas Negeri Malang</b><p>Study Program Student Association · Minat Non Bakat Division · Served as an official at competition events</p></div>
@@ -587,7 +614,9 @@ const GROUPS={
          [S+'fusion-2-modal.jpg','Frame simulation','Modal analysis of the support frame in Fusion 360']],
  ach:[[C+'ki-rbset-silver-award.jpg','Certificate of Award · Silver','KI-RBSET 2026, Malaysia','s1'],
       [C+'journal-cover.jpg','Published article','Karya International Journal of Biofuel and Bioenergy 5(1), 2026','s2']],
+ ach2:[[C+'saylor-phys102.jpg','PHYS102: Introduction to Electromagnetism','Saylor University · Certificate of achievement · Grade 96.08%']],
  cert:[[C+'ki-rbset-silver-award.jpg','Silver Award · KI-RBSET 2026','Semarak Ilmu · Malaysia','28 Sep 2026',''],
+       [C+'saylor-phys102.jpg','PHYS102: Introduction to Electromagnetism','Saylor University · Course completion, 42 hours · Grade 96.08%','25 Mar 2026','https://learn.saylor.org/admin/tool/certificate/index.php?code=9117070268RR'],
        [C+'dicoding-python.jpg','Beginning Programming with Python','Dicoding Academy · Passed the final exam of a 60-hour program: OOP, unit testing, data processing and ML libraries','31 May 2026','https://www.dicoding.com/certificates/JMZVO8483XN9'],
        [C+'dicoding-dasar-ai.jpg','Basic AI Learning','Dicoding Academy · 10-hour AI fundamentals program: Machine Learning and Deep Learning applications','25 Apr 2026','https://www.dicoding.com/certificates/JLX1V4NM5Z72'],
        [C+'dicoding-financial-literacy.jpg','Introduction to Financial Literacy','Dicoding Academy · 6-hour program: personal finance, investment and loan management','25 Apr 2026','https://www.dicoding.com/certificates/NVP7N4MEVZR0'],
